@@ -1,0 +1,24 @@
+---
+  mongodb_url: mongodb://mongo:27017/
+  test_mongodb_url: mongodb://127.0.0.1:27017/
+  host: 127.0.0.1
+  port: 8000
+  lifetime_rt:
+    days: 21
+    hours: 0
+    minutes: 0
+    seconds: 0
+  lifetime_at:
+    days: 0
+    hours: 0
+    minutes: 30
+    seconds: 0
+  days_rt_in_black_list: 31
+  smtp:
+    port: '465'
+    login: 'login@gmail.com'
+    password: 'appPassword'
+  admin_mails:
+    - 'login@gmail.com'
+  use_fake_mail_messenger: False
+  use_test_db: False

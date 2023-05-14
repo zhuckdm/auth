@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    mongo:
+        image: mongo:5
+        restart: always
+        ports:
+            - 2717:27017
+    api:
+        environment:
+            TZ: "Asia/Yekaterinburg"
+        image: auth:1
+        restart: always
+        ports:
+            - 8000:8000
+        depends_on:
+            - mongo
